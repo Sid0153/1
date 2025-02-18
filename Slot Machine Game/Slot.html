@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Slot Machine</title>
+    <link rel="stylesheet" href="Machine.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Casino Slot Machine</h1>
+        
+        <!-- Slot Machine Reels -->
+        <div class="slot-machine">
+            <div class="reel" id="reel1">🍒</div>
+            <div class="reel" id="reel2">🍊</div>
+            <div class="reel" id="reel3">🍇</div>
+        </div>
+        
+        <!-- Controls -->
+        <div class="controls">
+            <button id="spinBtn">SPIN</button>
+            <div class="bet">
+                <label for="betAmount">Bet Amount: $</label>
+                <input type="number" id="betAmount" value="10" min="1" max="100">
+            </div>
+        </div>
+        
+        <!-- Deposit / Withdraw Section -->
+        <div class="transaction">
+            <div class="transaction-input">
+                <label for="transactionAmount">Amount:</label>
+                <input type="number" id="transactionAmount" min="1">
+            </div>
+            <button id="depositBtn">Deposit</button>
+            <button id="withdrawBtn">Withdraw</button>
+        </div>
+        
+        <!-- Status -->
+        <div class="status">
+            <p id="balance">Balance: $1000</p>
+            <p id="message">Good Luck!</p>
+        </div>
+    </div>
+
+    <script src="Game.js"></script>
+</body>
+</html>
